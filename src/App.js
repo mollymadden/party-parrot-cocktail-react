@@ -47,10 +47,13 @@ clearEverything = () => {
 render() {
   let cocktailCount = this.state.cocktailCount;
   let cocktailPrice = this.state.cocktailPrice;
+
   let beerCount = this.state.beerCount;
   let beerPrice = this.state.beerPrice;
+  
   let waterCount = this.state.waterCount;
   let waterPrice = this.state.waterPrice;
+
   let cocktailTotal = cocktailPrice * cocktailCount;
   let beerTotal = beerPrice * beerCount;
   let waterTotal = waterPrice * waterCount;
@@ -63,14 +66,15 @@ render() {
   let beerProfit = beerCount * beerCost;
   let waterProfit = waterCount * waterCost;
 
+  let cocktailGrandTotal = cocktailTotal - cocktailProfit;
+  let beerGrandTotal = beerTotal - beerProfit;
+  let waterGrandTotal = waterTotal - waterProfit
+
 return (
 <div className="page">
 
-    <div className="main">
-      <img src={background} className="background" alt="background" />
-    </div>
-
     <div className="sidebar">
+      <h1>Party Parrot‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎☀️<br />🌺‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎Cocktail Lounge </h1>
 
         <div className="drinks">
 
@@ -91,7 +95,7 @@ return (
         </div>
 
 
-        <h1>Current Order</h1>
+        <h2>Current Order</h2>
         <div className="currentOrder">
           <div className="cocktailCount">
             {cocktailCount} x‎‏‏‎‏‏‎ ‎‏‏‎ ‎‎<br /> 
@@ -107,22 +111,30 @@ return (
         </div>
 
 
-        <h1>Cost Price</h1>
+        <h2>Cost Price</h2>
           <div className="costPrice">
             {cocktailCount} @ ${cocktailProfit}<br />
             {beerCount} @ ${beerProfit}<br />
             {waterCount} @ ${waterProfit}<br />
           </div>
 
-        <h1>Profit Total</h1>
+        <h2>Profit Total</h2>
           <div className="profitTotal">
-            ${cocktailTotal - cocktailProfit}<br />
-            ${beerTotal - beerProfit}<br />
-            ${waterTotal - waterProfit}<br />
+            ${cocktailGrandTotal}<br />
+            ${beerGrandTotal}<br />
+            ${waterGrandTotal}<br />
+            ------<br />
+            ${cocktailGrandTotal + beerGrandTotal + waterGrandTotal}<br />
           <button onClick={this.clearEverything}>Clear Order</button>
         </div>
 
+
     </div>
+
+    <div className="main">
+      <img src={background} className="background" alt="background" />
+    </div>
+
     </div>
   )}
     }
