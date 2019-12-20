@@ -7,11 +7,13 @@
 body {
   color: rgb(61, 175, 160);
   border: 20px solid gold;
+  font-size: 12px;
+  overflow-y: hidden;
 }
 
 
 button {
-  margin-top: 5%;
+  margin-top: 1%;
 }
 
 .profitTotal button {
@@ -22,31 +24,31 @@ button {
   display: flex;
   justify-content: space-between;
   overflow-x: hidden;
+  max-height: 94vh;
 }
 
 .main {
   display: flex;
   max-width: 60vw;
   justify-content: flex-start;
+
 }
 
 .background {
-  max-width: 100%;
+  min-width: 40vw;
 }
 
 .sidebar {
   max-width: 30vw;
   display: flex;
   flex-direction: column;
-  margin: 1%;
   justify-self: center;
   margin-left: 2%;
 }
 
 .heading {
-  min-width: 34vw;
-  max-width: 35vw;
-  margin-left: -4%;
+  min-width: 20vw;
+  max-width: 30vw;
   margin-bottom: 2%;
   width: auto;
   height: auto;
@@ -70,10 +72,11 @@ button {
 h2 {
   font-family: 'Overpass', sans-serif;
   color: rgb(255, 185, 80);
+  margin: 0px;
 }
 
 .picbutton img {
-  max-width: 50px;
+  max-width: 40px;
   height: auto;
 }
 
