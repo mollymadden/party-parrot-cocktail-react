@@ -52,7 +52,7 @@ render() {
   let beerPrice = this.state.beerPrice;
   
   let waterCount = this.state.waterCount;
-  let waterPrice = this.state.waterPrice;
+  let waterPrice = this.state.waterPrice.toFixed(2);
 
   let cocktailTotal = cocktailPrice * cocktailCount;
   let beerTotal = beerPrice * beerCount;
@@ -98,33 +98,28 @@ return (
         <h2>Current Order</h2>
         <div className="currentOrder">
           <div className="cocktailCount">
-            {cocktailCount} x‎‏‏‎‏‏‎ ‎‏‏‎ ‎‎<br /> 
-            {beerCount} x‏‏‎ ‎‏‏‎ ‎‎<br />
-            {waterCount} x‏‏‎ ‎‏‏‎ ‎<br />
+          🍹 ‎‏‏‎ ‎‎{cocktailCount} x‎‏‏‎‏‏‎ ‎‏‏‎ ${cocktailTotal} Party Parrot Cocktail‎‎<br /> 
+          🍺 ‎‏‏‎ ‎‎{beerCount} x‏‏‎ ‎‏‏‎ ${beerTotal} Party Parrot Beer‎‎<br />
+          💧 ‎‏‏‎ ‎‎{waterCount} x‏‏‎ ‎‏‏‎ ${waterTotal} Party Parrot Water‎<br />
           </div>
 
-          <div className="prices">
-            ${cocktailTotal} Party Parrot Cocktail<br />
-            ${beerTotal} Party Parrot Beer<br />
-            ${waterTotal} Party Parrot Water<br />
-          </div>
         </div>
 
 
         <h2>Cost Price</h2>
           <div className="costPrice">
-            {cocktailCount} @ ${cocktailProfit}<br />
-            {beerCount} @ ${beerProfit}<br />
-            {waterCount} @ ${waterProfit}<br />
+          🍹 ‎‏‏‎ ‎‎{cocktailCount} @ ${cocktailProfit} ea <br />
+          🍺 ‎‏‏‎ ‎‎{beerCount} @ ${beerProfit} ea <br />
+          💧 ‎‏‏‎ ‎‎{waterCount} @ ${waterProfit} ea <br />
           </div>
 
         <h2>Profit Total</h2>
           <div className="profitTotal">
-            ${cocktailGrandTotal}<br />
-            ${beerGrandTotal}<br />
-            ${waterGrandTotal}<br />
+          🍹 ‎‏‏‎ ‎‎${cocktailGrandTotal}<br />
+          🍺 ‎‏‏‎ ‎‎${beerGrandTotal}<br />
+          💧 ‎‏‏‎ ‎‎${waterGrandTotal}<br />
             ------<br />
-            ${cocktailGrandTotal + beerGrandTotal + waterGrandTotal}<br />
+            ${cocktailGrandTotal + beerGrandTotal + waterGrandTotal} Profit earned on this order<br />
           <button onClick={this.clearEverything}>Clear Order</button>
         </div>
 
