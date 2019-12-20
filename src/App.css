@@ -45,7 +45,11 @@ button {
 
 .heading {
   min-width: 34vw;
+  max-width: 35vw;
   margin-left: -4%;
+  margin-bottom: 2%;
+  width: auto;
+  height: auto;
 }
 
 .drinks {
@@ -75,27 +79,27 @@ h2 {
 
 .currentOrder {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 15px;
   border: 2px solid coral;
   display: flex;
   flex-direction: row;
-  padding: 1%;
+  padding: 2%;
   box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 
 .costPrice {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 15px;
   border: 2px solid coral;
-  padding: 1%;
+  padding: 2%;
   box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 
 .profitTotal {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 15px;
   border: 2px solid coral;
-  padding: 1%;
+  padding: 2%;
   box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 
