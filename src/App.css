@@ -46,7 +46,7 @@ button {
 .sidebar h1 {
   color: deeppink;
   font-family: 'Rancho', cursive;
-  font-size: 500%;
+  font-size: 5vw;
   text-align: left;
   transform: rotate(-10deg);
   margin-top: 16px;
