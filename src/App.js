@@ -3,6 +3,7 @@ import cocktail from './assets/cocktail.png';
 import beer from './assets/beer.jpeg';
 import water from './assets/water.jpg';
 import background from './assets/685.jpg';
+import heading from './assets/heading.png'
 import './App.css';
 
 
@@ -74,7 +75,7 @@ return (
 <div className="page">
 
     <div className="sidebar">
-      <h1>Party Parrot‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎🌺<br />‏‏‎☀️ ‎‏‏‎ ‎‏‏‎ ‎Cocktail Lounge </h1>
+        <img src={heading} className="heading" alt="heading" />
 
         <div className="drinks">
 
