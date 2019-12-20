@@ -6,6 +6,7 @@
 
 body {
   color: rgb(61, 175, 160);
+  border: 20px solid gold;
 }
 
 
@@ -31,16 +32,15 @@ button {
 
 .background {
   max-width: 100%;
-  margin: 2%;
 }
 
 .sidebar {
   min-width: 30vw;
   display: flex;
-  /* justify-content: flex-end; */
   flex-direction: column;
   margin: 1%;
-  margin-left: 3%;
+  justify-self: center;
+  margin-left: 2%;
 }
 
 .sidebar h1 {
@@ -80,19 +80,25 @@ h2 {
 
 .currentOrder {
   width: 100%;
+  border-radius: 20px;
   border: 2px solid coral;
   display: flex;
   flex-direction: row;
+  padding: 1%;
 }
 
 .costPrice {
   width: 100%;
+  border-radius: 20px;
   border: 2px solid coral;
+  padding: 1%;
 }
 
 .profitTotal {
   width: 100%;
+  border-radius: 20px;
   border: 2px solid coral;
+  padding: 1%;
 }
 
 .App-logo {
