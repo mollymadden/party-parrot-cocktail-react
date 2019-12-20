@@ -1,8 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rancho|Overpass&display=swap');
 
 .App {
   text-align: center;
 }
+
+body {
+  color: rgb(61, 175, 160);
+}
+
 
 button {
   margin-top: 5%;
@@ -63,6 +68,11 @@ button {
   justify-content: center;
 }
 
+h2 {
+  font-family: 'Overpass', sans-serif;
+  color: rgb(255, 185, 80);
+}
+
 .picbutton img {
   max-width: 50px;
   height: auto;
@@ -70,19 +80,19 @@ button {
 
 .currentOrder {
   width: 100%;
-  border: 2px solid black;
+  border: 2px solid coral;
   display: flex;
   flex-direction: row;
 }
 
 .costPrice {
   width: 100%;
-  border: 2px solid black;
+  border: 2px solid coral;
 }
 
 .profitTotal {
   width: 100%;
-  border: 2px solid black;
+  border: 2px solid coral;
 }
 
 .App-logo {

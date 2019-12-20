@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import cocktail from './assets/cocktail.png';
 import beer from './assets/beer.jpeg';
 import water from './assets/water.jpg';
-import background from './assets/background.jpg';
+import background from './assets/685.jpg';
 import './App.css';
 
 
@@ -74,7 +74,7 @@ return (
 <div className="page">
 
     <div className="sidebar">
-      <h1>Party Parrot‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎☀️<br />🌺‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎Cocktail Lounge </h1>
+      <h1>Party Parrot‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎🌺<br />‏‏‎☀️ ‎‏‏‎ ‎‏‏‎ ‎Cocktail Lounge </h1>
 
         <div className="drinks">
 
