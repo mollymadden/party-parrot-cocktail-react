@@ -101,7 +101,7 @@ return (
           <div className="cocktailCount">
           🍹 ‎‏‏‎ ‎‎{cocktailCount} x‎‏‏‎‏‏‎ ‎‏‏‎ ${cocktailTotal} Party Parrot Cocktail‎‎<br /> 
           🍺 ‎‏‏‎ ‎‎{beerCount} x‏‏‎ ‎‏‏‎ ${beerTotal} Party Parrot Beer‎‎<br />
-          🚰 ‎‏‏‎ ‎‎{waterCount} x‏‏‎ ‎‏‏‎ ${waterTotal} Party Parrot Water‎<br />
+          💧 ‎‏‏‎ ‎‎{waterCount} x‏‏‎ ‎‏‏‎ ${waterTotal} Party Parrot Water‎<br />
           </div>
 
         </div>
@@ -111,14 +111,14 @@ return (
           <div className="costPrice">
           🍹 ‎‏‏‎ ‎‎{cocktailCount} @ ${cocktailProfit} ea <br />
           🍺 ‎‏‏‎ ‎‎{beerCount} @ ${beerProfit} ea <br />
-          🚰 ‎‏‏‎ ‎‎{waterCount} @ ${waterProfit} ea <br />
+          💧 ‎‏‏‎ ‎‎{waterCount} @ ${waterProfit} ea <br />
           </div>
 
         <h2>Profit Total</h2>
           <div className="profitTotal">
           🍹 ‎‏‏‎ ‎‎${cocktailGrandTotal}<br />
           🍺 ‎‏‏‎ ‎‎${beerGrandTotal}<br />
-          🚰 ‎‏‏‎ ‎‎${waterGrandTotal}<br />
+          💧 ‎‏‏‎ ‎‎${waterGrandTotal}<br />
             ------<br />
             ${cocktailGrandTotal + beerGrandTotal + waterGrandTotal} Profit earned on this order<br />
           <button onClick={this.clearEverything}>Clear Order</button>
